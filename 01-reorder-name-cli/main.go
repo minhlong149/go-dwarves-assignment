@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"strings"
 )
 
 var (
@@ -70,15 +71,8 @@ func main() {
 
 	firstName = args[0]
 	lastName = args[1]
-
-	// Handle cases where the middle name is not provided.
-	if len(args) == 3 {
-		middleName = ""
-		countryCode = args[2]
-	} else {
-		middleName = args[2]
-		countryCode = args[3]
-	}
+	middleName = strings.Join(args[2:len(args)-1], " ")
+	countryCode = args[len(args)-1]
 
 	// Output the reordered name.
 	if reorderedName, success := reorderName(firstName, middleName, lastName, countryCode); success {
