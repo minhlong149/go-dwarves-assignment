@@ -6,3 +6,11 @@ Count the number of different integers in a String.
 - Outputs: Number of different integers
 
 > Two integers are considered different if their decimal representation without any leading zeros are different.
+
+## Run Tests
+
+To run the tests, run the following command:
+
+```bash
+go test -v
+```
