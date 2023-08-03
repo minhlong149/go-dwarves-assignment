@@ -1,0 +1,3 @@
+[submodule "05-concurrency-web-scraping"]
+	path = 05-concurrency-web-scraping
+	url = https://github.com/minhlong149/recipe-scraper
